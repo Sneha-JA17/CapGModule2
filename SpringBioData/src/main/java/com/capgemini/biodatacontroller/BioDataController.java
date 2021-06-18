@@ -31,6 +31,15 @@ public class BioDataController {
 		return mv1;
 	}
 	
+	@RequestMapping("/myemail")
+	public ModelAndView showMyEmail() {
+		System.out.println("In Biodata Controller");
+		ModelAndView mv1=new ModelAndView("biodata");
+		mv1.addObject("emailid",emailid);
+		
+		return mv1;
+	}
+	
 
 }
 
